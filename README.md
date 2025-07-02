@@ -23,7 +23,6 @@ If you have the Rust toolchain installed, you can install `pokescript` directly 
 ```bash
 cargo install pokescript
 ```
-*(Note: You will need to publish the crate to crates.io for this to work.)*
 
 ### For Arch Linux
 A `PKGBUILD` is provided in this repository. You can build and install it using `makepkg`:
@@ -94,5 +93,3 @@ Add `pokescript --random` to your shell's startup file (`.bashrc`, `.zshrc`, `co
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.
-
-
