@@ -1,0 +1,55 @@
+.TH "POKESCRIPT" "1" "July 2025" "pokescript" "User Commands"
+
+.SH "NAME"
+.PP
+pokescript - Show a pokemon in your terminal
+
+.SH "SYNOPSIS"
+.PP
+.B pokescript
+[\fI\,OPTION\/\fR]... [\fI\,POKEMON NAME\/\fR]...
+
+.SH "DESCRIPTION"
+.PP
+pokescript is a CLI utility to print out unicode image of a pokemon in your shell. You can either select a pokemon by name, or have a random one appear on your shell.
+
+.SH "OPTIONS"
+.TP
+.BR \-h ", " \-\-help
+Show help message and exit.
+.TP
+.BR \-l ", " \-\-list
+Print list of all pokemon.
+.TP
+.BR \-n ", " \-\-name " \fINAME\fR"
+Select pokemon by \fINAME\fR. Generally spelled like in the games, a few exceptions are nidoran-f, nidoran-m, mr-mime, farfetchd, flabebe type-null etc. Perhaps grep the output of \-\-list if in doubt.
+.TP
+.BR \-f ", " \-\-form " \fIFORM\fR"
+Show an alternate \fIFORM\fR of a pokemon
+.TP
+.BR \-\-no-title
+Do not display pokemon name.
+.TP
+.BR \-s ", " \-\-shiny
+Show the shiny version of the pokemon instead.
+.TP
+.BR \-b ", " \-\-big
+Show a larger version of the sprite.
+.TP
+.BR \-r ", " \-\-random " \fI[GENERATION]\fR"
+Show a random pokemon. This flag can optionally be followed by a generation number or range (1-8) to show random pokemon from a specific generation or range of generations. The generations can be provided as a continuous range (eg. 1-3) or as a list of generations (1,3,6)
+.TP
+.BR \-rn ", " \-\-random-by-names " \fINAMES\fR"
+Show a random pokemon chosen in the provided list of \fINAMES\fR. This list is in form (poke_1,poke_2,...,poke_n) only separated by comas WITHOUT whitespace (eg. charmander,bulbasaur,squirtle)
+
+.SH "BUGS"
+No known bugs.
+
+.SH "AUTHOR"
+Originally created by Luan T.
+Rewritten in Rust by Gemini.
+
+.SH "SEE ALSO"
+grep(1)
+.br
+.so man.cf
